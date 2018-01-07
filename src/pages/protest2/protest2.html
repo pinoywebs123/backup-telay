@@ -1,0 +1,162 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Post-Test Examinations</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <h2 text-center>Questions:</h2>
+    
+      <div>
+       
+        <ion-list radio-group [(ngModel)]="ans1">
+            <h5>1. What do plants need in order to live and grow?</h5>
+          
+            <ion-item>
+              <ion-label>junkfoods</ion-label>
+              <ion-radio  value="a"></ion-radio>
+            </ion-item>
+            
+            <ion-item>
+                <ion-label>air and sunlight</ion-label>
+                <ion-radio  value="b"></ion-radio>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label>money</ion-label>
+                <ion-radio  value="c"></ion-radio>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label>clothes</ion-label>
+                <ion-radio  value="d"></ion-radio>
+            </ion-item>
+             
+    
+          </ion-list>
+      </div>
+    
+      <div>
+          
+           <ion-list radio-group [(ngModel)]="ans2">
+              <h5> 2. What did Miss Cruz say about John’s answer?</h5>
+             
+               <ion-item>
+                 <ion-label>It’s a good answer</ion-label>
+                 <ion-radio  value="a"></ion-radio>
+               </ion-item>
+               
+               <ion-item>
+                   <ion-label>It's a wrong answer</ion-label>
+                   <ion-radio  value="b"></ion-radio>
+               </ion-item>
+       
+               <ion-item>
+                   <ion-label>He didn't answer</ion-label>
+                   <ion-radio  value="c"></ion-radio>
+               </ion-item>
+       
+               <ion-item>
+                   <ion-label>He does'nt speak</ion-label>
+                   <ion-radio  value="d"></ion-radio>
+               </ion-item>
+                
+       
+             </ion-list>
+         </div>
+    
+         <div>
+            
+             <ion-list radio-group [(ngModel)]="ans3">
+                 <h5> 3. What else do plants need aside from air and sunlight?</h5>
+               
+                 <ion-item>
+                   <ion-label>money</ion-label>
+                   <ion-radio  value="a"></ion-radio>
+                 </ion-item>
+                 
+                 <ion-item>
+                     <ion-label>house</ion-label>
+                     <ion-radio  value="b"></ion-radio>
+                 </ion-item>
+         
+                 <ion-item>
+                     <ion-label>clothes</ion-label>
+                     <ion-radio  value="c"></ion-radio>
+                 </ion-item>
+         
+                 <ion-item>
+                     <ion-label>water</ion-label>
+                     <ion-radio  value="d"></ion-radio>
+                 </ion-item>
+                  
+         
+               </ion-list>
+           </div>
+    
+           <div>
+              
+               <ion-list radio-group [(ngModel)]="ans4">
+                  <h5>4. Why do green plants need sunlight? </h5>
+                 
+                   <ion-item>
+                     <ion-label><div>so they can make</div><div>their food</div> </ion-label>
+                     <ion-radio  value="a"></ion-radio>
+                   </ion-item>
+                   
+                   <ion-item>
+                       <ion-label><div>so they can shine</div></ion-label>
+                       <ion-radio  value="b"></ion-radio>
+                   </ion-item>
+           
+                   <ion-item>
+                       <ion-label><div>so they can be bright</div> </ion-label>
+                       <ion-radio  value="c"></ion-radio>
+                   </ion-item>
+           
+                   <ion-item>
+                       <ion-label><div>so they can be warm</div></ion-label>
+                       <ion-radio  value="d"></ion-radio>
+                   </ion-item>
+                    
+           
+                 </ion-list>
+             </div>
+    
+             <div>
+                
+                 <ion-list radio-group [(ngModel)]="ans5">
+                     <h5>5. What is likely to happen with green plants if there is no sunlight?</h5>
+                   
+                     <ion-item>
+                       <ion-label>They will grow</ion-label>
+                       <ion-radio  value="a"></ion-radio>
+                     </ion-item>
+                     
+                     <ion-item>
+                         <ion-label><div>They will become</div><div>strong</div></ion-label>
+                         <ion-radio  value="b"></ion-radio>
+                     </ion-item>
+             
+                     <ion-item>
+                         <ion-label>They will die.</ion-label>
+                         <ion-radio  value="c"></ion-radio>
+                     </ion-item>
+             
+                     <ion-item>
+                         <ion-label>They will be happy</ion-label>
+                         <ion-radio  value="d"></ion-radio>
+                     </ion-item>
+                      
+             
+                   </ion-list>
+               </div>
+            
+    
+      <br>
+      <button ion-button block color="danger" (click)="clickFinishExam()">SUBMIT</button>
+</ion-content>

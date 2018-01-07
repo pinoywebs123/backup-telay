@@ -1,0 +1,41 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+      
+    <ion-title>Pretest</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p text-right><img src="image/clock.gif" width="50px"></p>
+  <p text-right><strong>Time:</strong> {{time}}</p>
+  <h2 text-center>DIRECTION: READ THE PASSAGE</h2>
+
+  <ion-card>
+      <ion-card-header text-center>
+         <strong>Liquids Good for You</strong>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <div>
+          <p text-center> "There are many liquids that are good for our health.</p>
+          <p text-center>Like water, fruit juice, and milk. Milk makes our bones strong.</p>
+          <p text-center>Juice gives us vitamims. While water cleans our body"</p>
+          <p text-center> Let's drink milk, juice, and water to make us healthy!</p>
+        </div>
+        <br>
+       
+        <br>
+         
+
+            
+      </ion-card-content>
+    </ion-card>
+    
+   <div padding>
+      <button ion-button block color="danger" (click)="clickTest()">Finished Reading</button>
+   </div>
+</ion-content>

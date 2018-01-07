@@ -1,0 +1,884 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Exercise <strong>{{letter}}</strong></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="exid == 1">
+        <p text-center>  the picture/s that begin with <strong>A</strong> sound.</p>
+    
+    <ion-list>
+          <ion-grid>
+              <ion-row>
+                <ion-col col-6 > <img src="exercise/a/apple.png" height="200px" (click)="clickImage(apple)"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="a"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6> <img src="exercise/a/arrow.jpg" height="200px" (click)="clickImage(arrow)"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label> </ion-label>
+                          <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col col-6><img src="exercise/a/ax.png" height="200px"></ion-col>
+                    <ion-col col-6>
+                        <ion-item>
+                            <ion-label> </ion-label>
+                            <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                          </ion-item>
+                    </ion-col>
+                  </ion-row>
+
+                
+   
+            </ion-grid>
+        </ion-list>
+  </div>
+
+  <div *ngIf="exid == 2">
+      <p text-center>Write the name of picture/s that starts with <strong>B</strong> sound.</p>
+      
+      <ion-list>
+          <ion-grid>
+
+              <ion-row>
+                  <ion-col col-6><img src="exercise/b/basket.jpg" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label floating>Name Here</ion-label>
+                          <ion-input type="text" [(ngModel)]="b" maxlength="15"></ion-input>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+             
+                <ion-row>
+                  <ion-col col-6>  <img src="exercise/b/bata.png" height="200px"> </ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label floating>Name Here</ion-label>
+                          <ion-input type="text" [(ngModel)]="c" maxlength="15"></ion-input>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col col-6> <img src="exercise/b/bola.png" height="200px"> </ion-col>
+                    <ion-col col-6>
+                        <ion-item>
+                            <ion-label floating>Name Here</ion-label>
+                            <ion-input type="text" [(ngModel)]="d" maxlength="15"></ion-input>
+                          </ion-item>
+                    </ion-col>
+                  </ion-row>
+   
+            </ion-grid>
+        </ion-list>
+
+  </div>
+
+<div *ngIf="exid == 3">
+  <h1>Letter {{letter}}</h1>
+</div>
+<div *ngIf="exid == 4">
+    <p text-center>  the picture/s that begin with <strong>D</strong> sound.</p>
+ 
+     <ion-list>
+        <ion-grid>
+
+            <ion-row>
+              <ion-col col-6>  <img src="exercise/d/doctor.jpg" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label> </ion-label>
+                      <ion-checkbox [(ngModel)]="a"></ion-checkbox>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6>  <img src="exercise/d/dog.jpg" height="200px"> </ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+              
+              <ion-row>
+                <ion-col col-6> <img src="exercise/d/door.jpg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6><img src="exercise/d/dance.png" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label> </ion-label>
+                          <ion-checkbox [(ngModel)]="d"></ion-checkbox>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col col-6><img src="exercise/d/duck.png" height="200px"></ion-col>
+                    <ion-col col-6>
+                        <ion-item>
+                            <ion-label> </ion-label>
+                            <ion-checkbox [(ngModel)]="e"></ion-checkbox>
+                          </ion-item>
+                    </ion-col>
+                  </ion-row>  
+ 
+          </ion-grid>
+      </ion-list>
+</div>
+<div *ngIf="exid == 5">
+    <p text-center>Write the name of picture/s that starts with <strong>E</strong> sound.</p>
+     
+    <ion-list>
+        <ion-grid>
+
+            <ion-row>
+              <ion-col col-6><img src="exercise/e/ear.jpg" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label floating>Name Here</ion-label>
+                      <ion-input type="text" [(ngModel)]="a" maxlength="15"></ion-input>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6> <img src="exercise/e/eggplant.jpg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>Name Here</ion-label>
+                        <ion-input type="text" [(ngModel)]="b" maxlength="15"></ion-input>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+           <ion-row>
+                <ion-col col-6> <img src="exercise/e/elephant.jpeg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>Name Here</ion-label>
+                        <ion-input type="text" [(ngModel)]="c" maxlength="15"></ion-input>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+           
+             
+ 
+       </ion-grid>
+</ion-list>
+
+</div>
+
+<div *ngIf="exid == 6">
+    <p text-center>Write the name of picture/s that starts with <strong>G</strong> sound.</p>
+     
+    <ion-list>
+        <ion-grid>
+
+            <ion-row>
+              <ion-col col-6><img src="exercise/g/goat.png" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label floating>Name Here</ion-label>
+                      <ion-input type="text" [(ngModel)]="a" maxlength="15"></ion-input>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            
+
+ 
+       </ion-grid>
+</ion-list>
+
+</div>
+<div *ngIf="exid == 7">
+    <p text-center>  the picture/s that begin with <strong>H</strong> sound.</p>
+    
+    <ion-list>
+        <ion-grid>
+            <ion-row>
+              <ion-col col-6> <img src="exercise/h/hammer.jpg" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label> </ion-label>
+                      <ion-checkbox [(ngModel)]="a"></ion-checkbox>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6> <img src="exercise/h/halaman.jpeg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6> <img src="exercise/h/hari.gif" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label> </ion-label>
+                          <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+               
+                     
+          </ion-grid>
+      </ion-list>
+
+</div>
+<div *ngIf="exid == 8">
+    <p text-center>  the picture/s that begin with <strong>I</strong> sound.</p>
+    
+    <ion-list>
+        <ion-grid>
+            
+
+            <ion-row>
+                <ion-col col-6>  <img src="exercise/i/egg.jpeg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6> <img src="exercise/i/igloo.jpg" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label> </ion-label>
+                          <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+               
+                <ion-row>
+                    <ion-col col-6> <img src="exercise/i/ilong.jpg" height="200px"></ion-col>
+                    <ion-col col-6>
+                        <ion-item>
+                            <ion-label> </ion-label>
+                            <ion-checkbox [(ngModel)]="d"></ion-checkbox>
+                          </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  
+                       
+          </ion-grid>
+      </ion-list>
+
+ 
+</div>
+<div *ngIf="exid == 9">
+    <p text-center>  the picture/s that begin with <strong>K</strong> sound.</p>
+    
+    <ion-list>
+        <ion-grid>
+
+            <ion-row>
+              <ion-col col-6><img src="exercise/k/kabayo.png" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label> </ion-label>
+                      <ion-checkbox [(ngModel)]="a"></ion-checkbox>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6><img src="exercise/k/kettle.png" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6><img src="exercise/k/kite.gif" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label> </ion-label>
+                          <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+              
+                
+     
+
+ 
+       </ion-grid>
+</ion-list>
+
+</div>
+<div *ngIf="exid == 10">
+    <p text-center>  the picture/s that begin with <strong>L</strong> sound.</p>
+    
+    <ion-list>
+        <ion-grid>
+            <ion-row>
+              <ion-col col-6><img src="exercise/l/bola.png" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label> </ion-label>
+                      <ion-checkbox [(ngModel)]="a"></ion-checkbox>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6> <img src="exercise/l/isda.jpg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6><img src="exercise/l/lion.gif" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label> </ion-label>
+                          <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+    
+               
+       
+          </ion-grid>
+      </ion-list>
+
+</div>
+
+<div *ngIf="exid == 11">
+    <p text-center>Write the name of picture/s that starts with <strong>M</strong> sound.</p>
+    <ion-list>
+        <ion-grid>
+
+            <ion-row>
+              <ion-col col-6><img src="exercise/m/mango.png" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label floating>Name Here</ion-label>
+                      <ion-input type="text" [(ngModel)]="a" maxlength="15"></ion-input>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6><img src="exercise/m/monkey.jpg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>Name Here</ion-label>
+                        <ion-input type="text" [(ngModel)]="b" maxlength="15"></ion-input>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6><img src="exercise/m/moon.png" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label floating>Name Here</ion-label>
+                          <ion-input type="text" [(ngModel)]="c" maxlength="15"></ion-input>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+
+       </ion-grid>
+</ion-list>
+</div>
+<div *ngIf="exid == 12">
+        <p text-center>Write the name of picture/s that starts with <strong>N</strong> sound.</p>
+    <ion-list>
+        <ion-grid>
+
+            <ion-row>
+              <ion-col col-6><img src="exercise/n/nail.png" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label floating>Name Here</ion-label>
+                      <ion-input type="text" [(ngModel)]="a" maxlength="15"></ion-input>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6><img src="exercise/n/nest.png" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>Name Here</ion-label>
+                        <ion-input type="text" [(ngModel)]="b" maxlength="15"></ion-input>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6><img src="exercise/n/nine.jpg" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label floating>Name Here</ion-label>
+                          <ion-input type="text" [(ngModel)]="c" maxlength="15"></ion-input>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+
+       </ion-grid>
+</ion-list>
+
+</div>
+
+<div *ngIf="exid == 14">
+    <p text-center>Write the name of picture/s that starts with <strong>O</strong> sound.</p>
+    
+    <ion-list>
+        <ion-grid>
+
+            <ion-row>
+              <ion-col col-6><img src="exercise/o/octupos.png" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label floating>Name Here</ion-label>
+                      <ion-input type="text" [(ngModel)]="a" maxlength="15"></ion-input>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6><img src="exercise/o/okra.jpg" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>Name Here</ion-label>
+                        <ion-input type="text" [(ngModel)]="b" maxlength="15"></ion-input>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6><img src="exercise/o/orange.gif" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label floating>Name Here</ion-label>
+                          <ion-input type="text" [(ngModel)]="c" maxlength="15"></ion-input>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+              
+ 
+       </ion-grid>
+</ion-list>
+
+</div>
+<div *ngIf="exid == 15">
+        <p text-center>  the picture/s that begin with <strong>P</strong> sound </p>
+    <ion-list>
+        <ion-grid>
+            <ion-row>
+              <ion-col col-6> <img src="exercise/p/apa.jpeg" height="200px"></ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                      <ion-label> </ion-label>
+                      <ion-checkbox [(ngModel)]="a"></ion-checkbox>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-6> <img src="exercise/p/pako.png" height="200px"></ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label> </ion-label>
+                        <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-6> <img src="exercise/p/pin.jpg" height="200px"></ion-col>
+                  <ion-col col-6>
+                      <ion-item>
+                          <ion-label> </ion-label>
+                          <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+                
+                  
+
+          </ion-grid>
+      </ion-list>
+</div>
+
+<div *ngIf="exid == 16">
+    <p text-center>Choose the name of the picture that starts with <strong>R</strong> sound.</p>
+    <br>
+    <p text-center><img src="exercise/r/rabbit.png" height="200px"></p>
+    <ion-list radio-group [(ngModel)]="a">
+       <ion-item>
+              <ion-label>Radio</ion-label>
+              <ion-radio value="radio"></ion-radio>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Row</ion-label>
+              <ion-radio value="row"></ion-radio>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Rabbit</ion-label>
+              <ion-radio value="rabbit"></ion-radio>
+            </ion-item>     
+            
+     </ion-list>
+
+</div>
+
+<div *ngIf="exid == 17">
+    <p text-center>Choose the name of the picture that starts with <strong>S</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/s/star.jpg" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Star</ion-label>
+                  <ion-radio value="star"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Sub</ion-label>
+                  <ion-radio value="sun"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Snake</ion-label>
+                  <ion-radio value="snake"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+       
+   
+
+
+</div>
+
+<div *ngIf="exid == 18">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>T</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/t/tutle.jpg" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Table</ion-label>
+                  <ion-radio value="table"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Turtle</ion-label>
+                  <ion-radio value="turtle"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Ten</ion-label>
+                  <ion-radio value="ten"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 19">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>U</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/u/umbrella.bmp" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Under</ion-label>
+                  <ion-radio value="under"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Upstair</ion-label>
+                  <ion-radio value="upstair"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Umbrella</ion-label>
+                  <ion-radio value="umbrella"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 20">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>W</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/w/watch.png" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Watch</ion-label>
+                  <ion-radio value="watch"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Water</ion-label>
+                  <ion-radio value="water"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Wheel</ion-label>
+                  <ion-radio value="wheel"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 21">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>Y</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/y/yoyo.png" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Yero</ion-label>
+                  <ion-radio value="yero"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Yelo</ion-label>
+                  <ion-radio value="yelo"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Yoyo</ion-label>
+                  <ion-radio value="yoyo"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 3">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>C</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/c/candle.png" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Cattle</ion-label>
+                  <ion-radio value="cattle"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Candle</ion-label>
+                  <ion-radio value="candle"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Car</ion-label>
+                  <ion-radio value="car"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 54">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>F</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/f/fish.jpg" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Fish</ion-label>
+                  <ion-radio value="fish"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Fake</ion-label>
+                  <ion-radio value="fake"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Friend</ion-label>
+                  <ion-radio value="friend"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 84">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>J</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/j/jacket.png" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Janitor</ion-label>
+                  <ion-radio value="janitor"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Jar</ion-label>
+                  <ion-radio value="jar"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Jacket</ion-label>
+                  <ion-radio value="jacket"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 154">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>Q</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/q/queen.jpg" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Queen</ion-label>
+                  <ion-radio value="queen"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Quiz</ion-label>
+                  <ion-radio value="quizz"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Quick</ion-label>
+                  <ion-radio value="quick"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 194">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>V</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/v/violin.png" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Violin</ion-label>
+                  <ion-radio value="violin"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Van</ion-label>
+                  <ion-radio value="van"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Victory</ion-label>
+                  <ion-radio value="victory"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 204">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>X</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/x/xylophone.png" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Xylophone</ion-label>
+                  <ion-radio value="xylophone"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Xray</ion-label>
+                  <ion-radio value="xray"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Snacks</ion-label>
+                  <ion-radio value="xmas"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+<div *ngIf="exid == 214">
+        
+    <p text-center>Choose the name of the picture that starts with <strong>Z</strong> sound.</p>
+    <br>
+        <p text-center> <img src="exercise/z/zebra.png" height="200px"></p>
+        <ion-list radio-group [(ngModel)]="a">
+           <ion-item>
+                  <ion-label>Zest</ion-label>
+                  <ion-radio value="zest"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Zoo</ion-label>
+                  <ion-radio value="zoo"></ion-radio>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Zebra</ion-label>
+                  <ion-radio value="zebra"></ion-radio>
+                </ion-item>     
+                
+         </ion-list>
+
+</div>
+
+
+
+
+
+  <button ion-button block color="danger" (click)="clickLetterExam(letter)">SUBMIT</button>
+</ion-content>
+
+
+    

@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>StudentList</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div *ngIf="student">
+        <ion-list>
+            <ion-item *ngFor="let aw of student" (click)="clickStudent(aw.code,aw.fname,aw.lname)">
+              <ion-icon name="ios-ribbon" item-start></ion-icon>
+               {{aw.fname}}  {{aw.lname}} 
+             
+            </ion-item>
+          </ion-list>
+    </div>
+</ion-content>

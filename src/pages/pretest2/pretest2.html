@@ -1,0 +1,165 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Pretest Reading Comprehension</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2 text-center>Questions:</h2>
+
+  <div>
+   
+    <ion-list radio-group [(ngModel)]="ans1">
+        <h5>1. What liquids are good for our health?</h5>
+      
+        <ion-item>
+          <ion-label><div>milk, juice and</div><div>water</div></ion-label>
+          <ion-radio  value="a"></ion-radio>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>softdrinks</ion-label>
+            <ion-radio  value="b"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>energy drinks</ion-label>
+            <ion-radio  value="c"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>beer</ion-label>
+            <ion-radio  value="d"></ion-radio>
+        </ion-item>
+         
+
+      </ion-list>
+  </div>
+
+  <div>
+      
+       <ion-list radio-group [(ngModel)]="ans2">
+          <h5> 2. What can milk do to us?</h5>
+         
+           <ion-item>
+             <ion-label><div>Milk will make us</div><div>sick</div></ion-label>
+             <ion-radio  value="a"></ion-radio>
+           </ion-item>
+           
+           <ion-item>
+               <ion-label><div>Milk makes our</div><div>bones strong</div></ion-label>
+               <ion-radio  value="b"></ion-radio>
+           </ion-item>
+   
+           <ion-item>
+               <ion-label><div>Milk makes us rich</div></ion-label>
+               <ion-radio  value="c"></ion-radio>
+           </ion-item>
+   
+           <ion-item>
+               <ion-label><div>Milk bring us harm</div></ion-label>
+               <ion-radio  value="d"></ion-radio>
+           </ion-item>
+            
+   
+         </ion-list>
+     </div>
+
+     <div>
+        
+         <ion-list radio-group [(ngModel)]="ans3">
+             <h5> 3. What does water do to our body?</h5>
+           
+             <ion-item>
+               <ion-label><div>Water makes our </div><div>teeth strong</div></ion-label>
+               <ion-radio  value="a"></ion-radio>
+             </ion-item>
+             
+             <ion-item>
+                 <ion-label><div>Water makes us</div><div>happy</div></ion-label>
+                 <ion-radio  value="b"></ion-radio>
+             </ion-item>
+     
+             <ion-item>
+                 <ion-label><div>Water makes our</div><div>bones strong</div></ion-label>
+                 <ion-radio  value="c"></ion-radio>
+             </ion-item>
+     
+             <ion-item>
+                 <ion-label><div>Water cleans our</div><div>body</div></ion-label>
+                 <ion-radio  value="d"></ion-radio>
+             </ion-item>
+              
+     
+           </ion-list>
+       </div>
+
+       <div>
+          
+           <ion-list radio-group [(ngModel)]="ans4">
+              <h5>4. What might happen if you don’t drink milk ? </h5>
+             
+               <ion-item>
+                 <ion-label>I will get sick</ion-label>
+                 <ion-radio  value="a"></ion-radio>
+               </ion-item>
+               
+               <ion-item>
+                   <ion-label>I will become strong</ion-label>
+                   <ion-radio  value="b"></ion-radio>
+               </ion-item>
+       
+               <ion-item>
+                   <ion-label>I will become rich</ion-label>
+                   <ion-radio  value="c"></ion-radio>
+               </ion-item>
+       
+               <ion-item>
+                   <ion-label>i will become happy</ion-label>
+                   <ion-radio  value="d"></ion-radio>
+               </ion-item>
+                
+       
+             </ion-list>
+         </div>
+
+         <div>
+            
+             <ion-list radio-group [(ngModel)]="ans5">
+                 <h5>5. What would you do if your friend offers you softdrink for recess?</h5>
+               
+                 <ion-item>
+                   <ion-label>I will not get it</ion-label>
+                   <ion-radio  value="a"></ion-radio>
+                 </ion-item>
+                 
+                 <ion-item>
+                     <ion-label><div>I will get it because</div><div>its delicious</div></ion-label>
+                     <ion-radio  value="b"></ion-radio>
+                 </ion-item>
+         
+                 <ion-item>
+                     <ion-label>I will throw it </ion-label>
+                     <ion-radio  value="c"></ion-radio>
+                 </ion-item>
+         
+                 <ion-item>
+                     <ion-label>I will go to office</ion-label>
+                     <ion-radio  value="d"></ion-radio>
+                 </ion-item>
+                  
+         
+               </ion-list>
+           </div>
+         
+          
+
+             
+
+  <br>
+  <button ion-button block color="danger" (click)="pretest()">SUBMIT</button>
+</ion-content>

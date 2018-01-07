@@ -1,0 +1,42 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Pro-Test</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p text-right><img src="image/clock.gif" width="50px"></p>
+    <p text-right><strong>Time:</strong> {{time}}</p>
+    <h2 text-center>DIRECTION: READ THE PASSAGE</h2>
+    
+    <ion-card>
+        <ion-card-header text-center>
+            <strong>Air and Sunlight</strong>
+        </ion-card-header>
+        <ion-card-content>
+          
+          <div>
+            <p text-center>Miss Cruz asked her Science class,</p>
+            <p text-center>“What do plants need in order to live and grow?”  John answered,</p>
+            <p text-center>“Air and sunlight.” “Good answer,” said Miss Cruz. </p>
+           
+          </div>
+          <br>
+          <div>
+            <p text-center>“Green plants need sunlight to make their food.</p>
+            <p text-center>They also need water and air.” </p>
+           
+          </div>
+          
+              
+        </ion-card-content>
+      </ion-card>
+
+      <div padding>
+          <button ion-button block color="danger" (click)="clickSubmit()">Finished Reading</button>
+       </div>
+</ion-content>
