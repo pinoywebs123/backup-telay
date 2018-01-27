@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 import { HomePage } from '../home/home';
+import { ExamPage } from '../exam/exam'; 
 @IonicPage()
 @Component({
   selector: 'page-protest2',
@@ -62,10 +63,11 @@ export class Protest2Page {
       db.executeSql('INSERT INTO postest(time,score,code) VALUES(?,?,?)',[this.time,this.score,localStorage.getItem("code")])
         .then(res => {
           console.log(res);
-          alert("Congratulations You just finished all the Examinations!");
+          
           localStorage.setItem("code", "");
-         this.navCtrl.setRoot(HomePage);
-  
+          this.navCtrl.setRoot(HomePage);
+          alert("Thank you for taking all the examinations");
+
         })
         .catch(e => {
           console.log(e);

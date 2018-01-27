@@ -9,7 +9,7 @@ import { PicturePage } from '../picture/picture';
 import { ProtestPage } from '../protest/protest';
 import { AlertController } from 'ionic-angular';
 import { NativeAudio } from '@ionic-native/native-audio';
-
+import { NumeracyPage } from '../numeracy/numeracy';
 @IonicPage()
 @Component({
   selector: 'page-exam',
@@ -21,6 +21,7 @@ export class ExamPage {
   two: any;
   three:any;
   fourth: any;
+  five: any;
   fname: any;
   lname: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, private sqlite: SQLite, public alertCtrl: AlertController, private nativeAudio: NativeAudio) {
@@ -28,6 +29,7 @@ export class ExamPage {
     this.two = false;
     this.three = false;
     this.fourth = false;
+    this.five = false;
     
   }
 
@@ -43,6 +45,7 @@ export class ExamPage {
 
     this.getPretest();
     this.getStudent();
+    this.makeNumeracy();
     
   }
 
@@ -100,6 +103,24 @@ export class ExamPage {
                          
                           if(res.rows.length > 0) {
                             this.three = true;
+                            if(this.one == true && this.two == true && this.three == true){
+                              this.sqlite.create({
+                                name: 'data.db',
+                                location: 'default'
+                              }).then((db: SQLiteObject) => { 
+                                db.executeSql('SELECT * FROM numeracy where code="'+localStorage.getItem("code")+'" ', {})
+                                .then(res => {
+                                 
+                                  if(res.rows.length > 0) {
+                                    this.fourth = true;
+                                    
+                                    
+                                  }
+                                })
+                                .catch(e => console.log(e));
+                              })
+                            
+                            }
                             
                             
                           }
@@ -173,8 +194,14 @@ export class ExamPage {
   }
 
   clickProtest(){
-    if(this.one == true && this.two == true && this.three == true){
+    if(this.one == true && this.two == true && this.three == true && this.fourth == true){
       this.navCtrl.setRoot(ProtestPage);
+    }
+  }
+
+  clickNumeracy(){
+    if(this.one == true && this.two == true && this.three == true){
+      this.navCtrl.setRoot(NumeracyPage);
     }
   }
 
@@ -242,6 +269,23 @@ export class ExamPage {
     
     
         db.executeSql('CREATE TABLE IF NOT EXISTS exam(id INTEGER PRIMARY KEY,code VARCHAR(32))', {})
+          .then(() => console.log("make exam"))
+          .catch(e => alert("query error"))
+    
+    
+      })
+      .catch(e => alert("error"));
+  }
+
+  makeNumeracy() {
+    this.sqlite.create({
+      name: 'data.db',
+      location: 'default'
+    })
+      .then((db: SQLiteObject) => {
+    
+    
+        db.executeSql('CREATE TABLE IF NOT EXISTS numeracy(code VARCHAR(32),score VARCHAR(32))', {})
           .then(() => console.log("make exam"))
           .catch(e => alert("query error"))
     

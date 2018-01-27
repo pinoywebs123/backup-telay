@@ -26,6 +26,7 @@ import { LetterExamPage } from '../pages/letter-exam/letter-exam';
 import { ProtestPage } from '../pages/protest/protest';
 import { Protest2Page } from '../pages/protest2/protest2';
 import { ExamPage } from '../pages/exam/exam';
+import { NumeracyPage } from '../pages/numeracy/numeracy';
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +45,8 @@ import { ExamPage } from '../pages/exam/exam';
     // LetterExamPage,
     // ProtestPage,
     // Protest2Page,
-    // ExamPage
+    // ExamPage,
+    // NumeracyPage
 
   ],
   imports: [
@@ -68,7 +70,8 @@ import { ExamPage } from '../pages/exam/exam';
     LetterExamPage,
     ProtestPage,
     Protest2Page,
-    ExamPage
+    ExamPage,
+    NumeracyPage
   ],
   providers: [
     StatusBar,

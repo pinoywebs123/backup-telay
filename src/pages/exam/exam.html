@@ -2,62 +2,78 @@
 <ion-header>
 
   
-  <ion-toolbar  color="secondary">
-      <button ion-button menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>Exam List</ion-title>
-          
-          <ion-buttons end>
-            <button ion-button icon-only color="royal" (click)="clickRegister()">
-              <ion-icon name="md-person-add"></ion-icon>
-            </button>
-          </ion-buttons>
-      
-        </ion-toolbar>
-</ion-header>
-
-
-<ion-content>
-    <h3 text-center>Hi!! {{fname}} {{lname}}</h3>
-    <ion-grid>
-        <ion-row>
-         
-          <ion-col col-6 *ngIf="one == true"> 
-              <p text-center><img src="gallery/2.png"></p>
-              
-          </ion-col>
-          <ion-col col-6 *ngIf="one == false"> 
-              <p text-center><img src="gallery/1.png" (click)="clickPretest()"></p>
-              
-          </ion-col>
-
-          <ion-col col-6  *ngIf="two == true"> 
-                <p text-center><img src="gallery/3.png" (click)="clickImage()"></p>
-          </ion-col>
-          <ion-col col-6  *ngIf="two == false"> 
-              <p text-center><img src="gallery/3.png" (click)="clickImage()"></p>
-             
-          </ion-col>
-         
-
-        </ion-row>
-        <ion-row>
-            <ion-col col-6 *ngIf="three == true">
-                <p text-center><img src="gallery/6.png"></p>
+    <ion-toolbar  color="secondary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Exam List</ion-title>
+            
+            <ion-buttons end>
+              <button ion-button icon-only color="royal" (click)="clickRegister()">
+                <ion-icon name="md-person-add"></ion-icon>
+              </button>
+            </ion-buttons>
+        
+          </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <h3 text-center>Hi!! {{fname}} {{lname}}</h3>
+      <ion-grid>
+          <ion-row>
+           
+            <ion-col col-6 *ngIf="one == true"> 
+                <p text-center><img src="gallery/2.png"></p>
+                
             </ion-col>
-
-            <ion-col col-6 *ngIf="three == false">
-                <p text-center><img src="gallery/5.png" (click)="clickExercise()"></p>
+            <ion-col col-6 *ngIf="one == false"> 
+                <p text-center><img src="gallery/1.png" (click)="clickPretest()"></p>
+                
+            </ion-col>
+  
+            <ion-col col-6  *ngIf="two == true"> 
+                  <p text-center><img src="gallery/3.png" (click)="clickImage()"></p>
+            </ion-col>
+            <ion-col col-6  *ngIf="two == false"> 
+                <p text-center><img src="gallery/3.png" (click)="clickImage()"></p>
+               
+            </ion-col>
+           
+  
+          </ion-row>
+          <ion-row>
+              <ion-col col-6 *ngIf="three == true">
+                  <p text-center><img src="gallery/6.png"></p>
+              </ion-col>
+  
+              <ion-col col-6 *ngIf="three == false">
+                  <p text-center><img src="gallery/5.png" (click)="clickExercise()"></p>
+                  
+              </ion-col>
+  
+              <ion-col col-6 *ngIf="fourth == true">
+                <p text-center> <img src="gallery/10.png" ></p>
                 
             </ion-col>
 
-            <ion-col col-6 *ngIf="fourth == true">
+            <ion-col col-6 *ngIf="fourth == false">
+                <p text-center> <img src="gallery/9.png" (click)="clickNumeracy()"></p>
+                
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            
+
+            <ion-col col-6 *ngIf="five == true">
                 <p text-center><img src="gallery/8.png"></p>
             </ion-col>
-            <ion-col col-6 *ngIf="fourth == false" (click)="clickProtest()">
+            <ion-col col-6 *ngIf="five == false" (click)="clickProtest()">
                 <p text-center><img src="gallery/7.png"></p>
             </ion-col>
+
         </ion-row>
-      </ion-grid>
-</ion-content>
+
+        </ion-grid>
+  </ion-content>

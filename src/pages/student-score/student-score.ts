@@ -56,6 +56,8 @@ export class StudentScorePage {
   vscore : any;
   xscore : any;
   zscore : any;
+
+  score3 : any;
   constructor(public navCtrl: NavController, public navParams: NavParams, private sqlite: SQLite) {
     this.code = navParams.get("code");
     this.fname = navParams.get("fname");
@@ -66,6 +68,7 @@ export class StudentScorePage {
     this.getData();
     this.getExercise();
     this.getPostest();
+    this.getNumeracy();
   }
 
   getData() {
@@ -227,6 +230,23 @@ export class StudentScorePage {
           }else if(this.fspeed2 == "Slow" && this.fcompre2 == "Frustration"){
             this.summary2 = "Frustration";
           }
+        }
+      })
+      .catch(e => console.log(e));
+    })
+  }
+
+  getNumeracy(){
+    this.sqlite.create({
+      name: 'data.db',
+      location: 'default'
+    }).then((db: SQLiteObject) => { 
+      db.executeSql('SELECT * FROM numeracy where code="'+this.code+'"', {})
+      .then(res => {
+        
+        if(res.rows.length > 0) {
+          this.score3 = res.rows.item(0).score;
+          
         }
       })
       .catch(e => console.log(e));

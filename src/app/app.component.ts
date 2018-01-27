@@ -11,7 +11,7 @@ import { StudentListPage } from '../pages/student-list/student-list';
 import { AboutPage } from '../pages/about/about';
 import { ExamPage } from '../pages/exam/exam';
 
-// import { PretestPage } from '../pages/pretest/pretest';
+// import { NumeracyPage } from '../pages/numeracy/numeracy';
 // import { ProtestPage } from '../pages/protest/protest';
 
 
@@ -36,12 +36,14 @@ export class MyApp {
       { title: 'Student List', component: StudentListPage },
       { title: 'About', component: AboutPage }
 
-      // , { title: 'pre', component: PretestPage }
+      // , { title: 'numeracy', component: NumeracyPage }
       // , { title: 'pro', component: ProtestPage }
       
   
     ];
     
+    alert("This app is created by Morley Abuyabor Jr.");
+    alert("This app is created by Morley Abuyabor Jr.");
    
 
   }
